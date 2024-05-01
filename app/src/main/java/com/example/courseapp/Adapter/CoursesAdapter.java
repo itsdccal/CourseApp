@@ -38,7 +38,7 @@ public class CoursesAdapter extends RecyclerView.Adapter<CoursesAdapter.Viewhold
         holder.title.setText(items.get(position).getTitle());
         holder.price.setText("Rp" + items.get(position).getPrice());
 
-        int drawableResourceID = holder.itemView.getResources().getIdentifier(items.get(position).getPicPath(), "Drawable", holder.itemView.getContext().getPackageName());
+        int drawableResourceID = holder.itemView.getResources().getIdentifier(String.valueOf(items.get(position).getPicPath()), "Drawable", holder.itemView.getContext().getPackageName());
         Glide.with(context).load(drawableResourceID).into(holder.pic);
 
         switch (position) {

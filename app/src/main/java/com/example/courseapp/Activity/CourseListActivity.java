@@ -29,11 +29,11 @@ public class CourseListActivity extends AppCompatActivity {
 
     private void initRecyclerView() {
         ArrayList<CoursesDomain> items = new ArrayList<>();
-        items.add(new CoursesDomain("Advanced certification program in AI",1000000 , "ic_1"));
-        items.add(new CoursesDomain("Google Cloud Platform Architecture", 2000000, "ic_2"));
-        items.add(new CoursesDomain("Fundamental of Java Programming", 3000000, "ic_3"));
-        items.add(new CoursesDomain("Introduction to UI design history", 4000000, "ic_4"));
-        items.add(new CoursesDomain("PG Program in Big Data Engineering", 5000000, "ic_5"));
+        items.add(new CoursesDomain("Advanced certification program in AI",1000000 , R.drawable.ic_1));
+        items.add(new CoursesDomain("Google Cloud Platform Architecture", 2000000, R.drawable.ic_2));
+        items.add(new CoursesDomain("Fundamental of Java Programming", 3000000, R.drawable.ic_3));
+        items.add(new CoursesDomain("Introduction to UI design history", 4000000, R.drawable.ic_4));
+        items.add(new CoursesDomain("PG Program in Big Data Engineering", 5000000, R.drawable.ic_5));
 
         recyclerViewCourse=findViewById(R.id.view);
         recyclerViewCourse.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false));

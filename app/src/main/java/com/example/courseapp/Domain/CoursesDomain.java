@@ -3,9 +3,9 @@ package com.example.courseapp.Domain;
 public class CoursesDomain {
     private String title;
     private double price;
-    private String picPath;
+    private int picPath;
 
-    public CoursesDomain(String title, double price, String picPath) {
+    public CoursesDomain(String title, double price, int picPath) {
         this.title = title;
         this.price = price;
         this.picPath = picPath;
@@ -27,11 +27,11 @@ public class CoursesDomain {
         this.price = price;
     }
 
-    public String getPicPath() {
+    public int getPicPath() {
         return picPath;
     }
 
-    public void setPicPath(String picPath) {
+    public void setPicPath(int picPath) {
         this.picPath = picPath;
     }
 }
